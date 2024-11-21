@@ -12,7 +12,7 @@ Password: inter-nett
 
 ## Tom
 
-Hostname: rasperry-tom
+Hostname: raspberry-tom
 IP: 192.168.102.136
 
 Username: tom
