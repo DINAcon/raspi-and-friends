@@ -26,7 +26,13 @@ IP: 192.168.102.151
 Username: mischa
 Password: dinacon
 
-SSH: `ssh tom@192.168.102.136 `
+## Ozzy
+Hostname: ozzberry
+IP: 192.168.102.152
+
+Username: ozzy
+Password: HackNight-2024
+
 ### Foss
 
 Hostname: foss (.local)
