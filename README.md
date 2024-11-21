@@ -20,7 +20,7 @@ Password: dinacon
 
 ## Mischa
 
-Hostname: rasperry-mischa
+Hostname: raspberry-mischa
 IP: 192.168.102.151
 
 Username: mischa
