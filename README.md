@@ -18,6 +18,14 @@ IP: 192.168.102.136
 Username: tom
 Password: dinacon
 
+## Mischa
+
+Hostname: rasperry-mischa
+IP: 192.168.102.151
+
+Username: mischa
+Password: dinacon
+
 SSH: `ssh tom@192.168.102.136 `
 ### Foss
 
