@@ -34,6 +34,27 @@ Hostname: foss (.local)
 Username: janikvonrotz
 Password: janikvonrotz
 
+## Setup K3S
+
+Link: <https://docs.k3s.io/quick-start>
+
+In the terminal of your laptop:
+
+```bash
+curl -sfL https://get.k3s.io | K3S_TOKEN=dinacon sh -
+```
+
+SSH to the rasperry pi.
+
+Enable cgroup v2: <https://maxdon.tech/posts/k3s-raspberry-pi/>
+
+Setup worker:
+
+```bash
+curl -sfL https://get.k3s.io | K3S_URL=https://HOST_IP_ADDRESS:6443 K3S_TOKEN=dinacon sh -
+```
+
+
 SSH: Enabled
 SSH-Login: Password
 
