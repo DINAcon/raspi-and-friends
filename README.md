@@ -52,7 +52,7 @@ Link: <https://docs.k3s.io/quick-start>
 In the terminal of your laptop:
 
 ```bash
-curl -sfL https://get.k3s.io | K3S_TOKEN=dinacon sh -
+sudo curl -sfL https://get.k3s.io | K3S_TOKEN=dinacon sh -
 ```
 
 SSH to the rasperry pi.
@@ -67,7 +67,14 @@ sudo reboot
 Setup worker:
 
 ```bash
-curl -sfL https://get.k3s.io | K3S_URL=https://HOST_IP_ADDRESS:6443 K3S_TOKEN=dinacon sh -
+sudo curl -sfL https://get.k3s.io | K3S_URL=https://HOST_IP_ADDRESS:6443 K3S_TOKEN=dinacon sh -
+```
+
+Copy the kubconfig on your laptop.
+
+```bash
+sudo chmod 644 /etc/rancher/k3s/k3s.yaml
+cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
 ```
 
 Check if node is ready on your laptop.
