@@ -44,3 +44,34 @@ SSH: Enabled
 SSH-Login: Password
 
 ssh: `ssh janikvonrotz@`
+
+## Setup K3S
+
+Link: <https://docs.k3s.io/quick-start>
+
+In the terminal of your laptop:
+
+```bash
+curl -sfL https://get.k3s.io | K3S_TOKEN=dinacon sh -
+```
+
+SSH to the rasperry pi.
+
+Enable cgroup v2: <https://maxdon.tech/posts/k3s-raspberry-pi/>
+
+```bash
+echo ' cgroup_memory=1 cgroup_enable=memory' | sudo tee -a /boot/firmware/cmdline.txt
+sudo reboot
+```
+
+Setup worker:
+
+```bash
+curl -sfL https://get.k3s.io | K3S_URL=https://HOST_IP_ADDRESS:6443 K3S_TOKEN=dinacon sh -
+```
+
+Check if node is ready on your laptop.
+
+```bash
+k3s kubectl get nodes
+```
